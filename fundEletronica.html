@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Fundamentos de Eletrônica</title>
+    <title>Fundamentos de Eletroeletrônica</title>
 </head>
 <body>
     <header>
@@ -16,17 +16,182 @@
             <a href="./fundBancoDados.html" class="link-menu">Fundamentos de Banco de Dados</a>
             <a href="./fundRedes.html" class="link-menu">Fundamentos de Redes</a>
             <a href="./logComputacional.html" class="link-menu">Lógica Computacional</a>
-            <a href="./fundTecnInf.html" class="link-menu">Fundamentos de Tecnologia da Informação</a>
+            <a href="./fundTecInf.html" class="link-menu">Fundamentos de Tecnologia da Informação</a>
         </nav>
     </header>
-    <main>
-        <section class="secao-modulo">
-            <h2>Fundamentos de Eletrônica</h2>
-            <p>Conteúdo específico sobre fundamentos de eletricidade e eletrônica.</p>
+
+    <main class="conteudo-principal">
+
+        <section class="secao-heroi">
+            <h2>Fundamentos de Eletroeletrônica</h2>
+            <p>Conteúdo sobre eletrônica, sensores, Arduino e scripts para cálculos básicos de circuitos.</p>
         </section>
+
+        <!-- Seção 1: Componentes Eletrônicos -->
+        <section class="secao-conteudo">
+            <h3>1. Componentes Eletrônicos</h3>
+            <div class="servicos-itens">
+                <div class="servico">
+                    <h4>Resistor</h4>
+                    <p>Limita a corrente em um circuito e protege outros componentes.</p>
+                    <img src="./imgs/resistor.png" alt="Resistor">
+                </div>
+                <div class="servico">
+                    <h4>Diodo LED</h4>
+                    <p>Emite luz quando a corrente elétrica passa por ele.</p>
+                    <img src="./imgs/diodoLed.png" alt="Diodo LED">
+                </div>
+                <div class="servico">
+                    <h4>Transistor</h4>
+                    <p>Amplifica ou chaveia sinais elétricos em circuitos.</p>
+                    <img src="./imgs/transistor.png" alt="Transistor">
+                </div>
+                <div class="servico">
+                    <h4>Circuito Integrado</h4>
+                    <p>Conjunto de componentes eletrônicos miniaturizados em um chip.</p>
+                    <img src="./imgs/circuito_integrado.png" alt="Circuito Integrado">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 2: Sensores -->
+        <section class="secao-conteudo">
+            <h3>2. Sensores em Sistemas Automatizados</h3>
+            <div class="servicos-itens">
+                <div class="servico">
+                    <h4>Sensor de Temperatura</h4>
+                    <p>Detecta variações de temperatura em ambientes ou equipamentos.</p>
+                </div>
+                <div class="servico">
+                    <h4>Sensor de Umidade</h4>
+                    <p>Monitora níveis de umidade em solos ou no ar.</p>
+                </div>
+                <div class="servico">
+                    <h4>Sensor de Luminosidade</h4>
+                    <p>Detecta a intensidade de luz para controlar iluminação ou alarmes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 3: Arduino -->
+        <section class="secao-conteudo">
+            <h3>3. Arduino</h3>
+            <p>O Arduino é uma plataforma de prototipagem eletrônica de código aberto.</p>
+            <div class="servicos-itens">
+                <div class="servico">
+                    <h4>O que é e Para que Serve</h4>
+                    <p>Permite criar projetos eletrônicos interativos e sistemas automatizados.</p>
+                    <img src="./imgs/arduino.png" alt="Placa Arduino">
+                </div>
+                <div class="servico">
+                    <h4>Vantagens e Desvantagens</h4>
+                    <p><strong>Vantagens do Arduino</strong></p>
+                    <ul>
+                        <li>Fácil de aprender e usar, ideal para iniciantes.</li>
+                        <li>Código aberto e grande comunidade de suporte.</li>
+                        <li>Baixo custo e compatível com diversos sensores e módulos.</li>
+                        <li>Flexível para projetos de robótica, automação e IoT.</li>
+                    </ul>
+                    <p><strong>Desvantagens do Arduino</strong></p>
+                    <ul>
+                        <li>Limitação de processamento e memória.</li>
+                        <li>Pouca proteção contra sobrecarga elétrica.</li>
+                        <li>Mais indicado para protótipos do que para produção em larga escala.</li>
+                    </ul>
+                </div>
+                <div class="servico">
+                    <h4>Funcionamento</h4>
+                    <p>Possui entradas e saídas digitais e analógicas para interagir com sensores e atuadores.</p>
+                </div>
+                <div class="servico">
+                    <h4>Linguagens de Programação</h4>
+                    <p>Principalmente C/C++, mas também suporta Python e outras linguagens com extensões.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 4: Entradas e Saídas -->
+        <section class="secao-conteudo">
+            <h3>4. Entradas e Saídas</h3>
+            <div class="servicos-itens">
+                <div class="servico">
+                    <h4>Entradas e Saídas Digitais</h4>
+                    <p>Detectam sinais ON/OFF e acionam dispositivos como LEDs ou relés.</p>
+                </div>
+                <div class="servico">
+                    <h4>Entradas e Saídas Analógicas</h4>
+                    <p>Permitem leituras e controles variáveis, como sensores de temperatura ou potenciômetros.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 5: Scripts e Cálculos -->
+        <section class="secao-conteudo">
+            <h3>5. Cálculo de Circuito com 3 Resistores</h3>
+            <p>Insira os valores da tensão e das resistências para calcular corrente, potência e tensão em cada resistor:</p>
+
+            <div class="servico">
+                <label for="V">Tensão (V): </label>
+                <input type="number" id="V" placeholder="Ex: 12"><br><br>
+
+                <label for="rUm">Resistor 1 (Ω): </label>
+                <input type="number" id="rUm" placeholder="Ex: 10"><br><br>
+
+                <label for="rDois">Resistor 2 (Ω): </label>
+                <input type="number" id="rDois" placeholder="Ex: 20"><br><br>
+
+                <label for="rTres">Resistor 3 (Ω): </label>
+                <input type="number" id="rTres" placeholder="Ex: 30"><br><br>
+
+                <button onclick="principal()">Calcular</button>
+                <div id="res" style="margin-top: 15px; font-weight: bold;"></div>
+            </div>
+        </section>
+
+        <!-- Seção 6: Outros Componentes -->
+        <section class="secao-conteudo">
+            <h3>6. Diodos e Displays</h3>
+            <div class="servicos-itens">
+                <div class="servico">
+                    <h4>Diodo</h4>
+                    <p>Permite a passagem de corrente apenas em um sentido.</p>
+                </div>
+                <div class="servico">
+                    <h4>Diodo LED</h4>
+                    <p>Emite luz quando a corrente passa.</p>
+                </div>
+                <div class="servico">
+                    <h4>Display 7 segmentos</h4>
+                    <p>Mostra números de 0 a 9 em um formato digital.</p>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <footer>
-        <p>By Paulo Otávio &copy; &trade;<a href="https://www.instagram.com/__paulo.otv?igsh=MTBtZWpobWJ5OWo0YQ=="><img src="./imagens/Captura de tela 2025-10-09 100325.png"></a></p>
+
+    <footer class="footer">
+        <div class="footer-conteudo">
+            <div class="footer-coluna">
+                <h4>Explore</h4>
+                <a href="./index.html">Página Inicial</a>
+                <a href="./fundBancoDados.html">Banco de Dados</a>
+                <a href="./logProgramacao.html">Programação</a>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Redes Sociais</h4>
+                <a href="https://github.com/otaviok9">GitHub</a>
+                <a href="https://www.instagram.com/__paulo.otv?igsh=MTBtZWpobWJ5OWo0YQ==">Instagram</a>
+                <a href="">Email</a>
+            </div>
+        </div>
+
+        <div class="footer-direitos">
+            © 2025 Otv'sTech — Criado para aprendizado e testes.
+        </div>
     </footer>
+
+    <!-- Script JS -->
+    <script src="./eletronica.js"></script>
 </body>
 </html>

@@ -16,16 +16,138 @@
             <a href="./fundBancoDados.html" class="link-menu">Fundamentos de Banco de Dados</a>
             <a href="./fundRedes.html" class="link-menu">Fundamentos de Redes</a>
             <a href="./logComputacional.html" class="link-menu">Lógica Computacional</a>
-            <a href="./fundTecnInf.html" class="link-menu">Fundamentos de Tecnologia da Informação</a>
+            <a href="./fundTecInf.html" class="link-menu">Fundamentos de Tecnologia da Informação</a>
         </nav>
     </header>
-    <main>
-        <section class="secao-modulo">
+
+    <main class="conteudo-principal">
+
+        <section class="secao-heroi">
             <h2>Fundamentos de Banco de Dados</h2>
-            <p>Conteúdo específico sobre introdução a bancos de dados, SQL, modelagem e manipulação de dados.</p>
+            <p>Conheça os conceitos essenciais sobre bancos de dados, SGBDs, modelagem e aplicações práticas.</p>
         </section>
+
+        <!-- Seção 1 -->
+        <section class="secao-conteudo">
+            <h3>1. O que é um SGBD? Tipos e Aplicações</h3>
+            <p>Um Sistema de Gerenciamento de Banco de Dados (SGBD) é um software que permite criar, gerenciar e manipular bancos de dados. Ele garante integridade, segurança e eficiência no acesso aos dados.</p>
+            <div class="servicos-itens">
+                <div class="servico">
+                    <h4>💻 Tipos de SGBD</h4>
+                    <p>Relacional, Não Relacional (NoSQL), Hierárquico, Rede.</p>
+                </div>
+                <div class="servico">
+                    <h4>⚙️ Aplicações</h4>
+                    <p>Empresas, sistemas bancários, sites, aplicativos, redes sociais, ERPs e CRMs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 2 -->
+        <section class="secao-conteudo">
+            <h3>2. Principais Bancos de Dados</h3>
+            <p>Os bancos de dados mais usados incluem:</p>
+            <div class="servicos-itens">
+                <div class="servico">
+                    <h4>Relacionais</h4>
+                    <p>MySQL, PostgreSQL, Oracle, SQL Server.</p>
+                </div>
+                <div class="servico">
+                    <h4>Não Relacionais</h4>
+                    <p>MongoDB, Firebase, Cassandra, Redis.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 3 -->
+        <section class="secao-conteudo">
+            <h3>3. Dicionário de Dados e Tipos de Dados</h3>
+            <p>O dicionário de dados é um repositório que descreve os elementos do banco de dados, incluindo tabelas, campos, tipos de dados e restrições.</p>
+            <div class="servicos-itens">
+                <div class="servico">
+                    <h4>📌 Tipos de Dados</h4>
+                    <p>Inteiro, Real, String (texto), Booleano, Data/Hora, BLOB (imagens e arquivos).</p>
+                </div>
+                <div class="servico">
+                    <h4>📝 Importância</h4>
+                    <p>Garante padronização, integridade e entendimento do banco por desenvolvedores e administradores.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 4 -->
+        <section class="secao-conteudo">
+            <h3>4. Modelagem de Banco de Dados, DER e MER</h3>
+            <p>A modelagem define como os dados serão organizados. O Diagrama Entidade-Relacionamento (DER) e o Modelo Entidade-Relacionamento (MER) ajudam a representar visualmente essas relações.</p>
+            <div class="servicos-itens">
+                <div class="servico">
+                    <h4>📊 DER</h4>
+                    <p>Representa entidades, atributos e relacionamentos de forma simplificada.</p>
+                </div>
+                <div class="servico">
+                    <h4>📈 MER</h4>
+                    <p>Detalha entidades, relacionamentos, cardinalidade e regras de integridade.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 5 -->
+        <section class="secao-conteudo">
+            <h3>5. Exemplo de Diagrama DER</h3>
+            <p>Exemplo de DER ilustrando o relacionamento entre entidades de um sistema de cadastro de alunos e cursos:</p>
+            <img src="./imgs/exemploDiagramaDer.png" alt="Exemplo de Diagrama DER" class="img-texto">
+        </section>
+
+        <!-- Seção 6 -->
+        <section class="secao-conteudo">
+            <h3>6. Exemplo de Diagrama MER</h3>
+            <p>Exemplo de MER detalhando entidades, atributos e relacionamentos com cardinalidade:</p>
+            <img src="./imgs/exemploDiagramaDer2.png" alt="Exemplo de Diagrama MER" class="img-texto">
+        </section>
+
+        <!-- Seção 7 -->
+        <section class="secao-conteudo">
+            <h3>7. Formulário de Cadastro de Dados</h3>
+            <p>Exemplo de formulário simulando a gravação de dados em um banco de dados:</p>
+            <form class="formulario">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email"><br>
+
+                <label for="curso">Curso:</label>
+                <input type="text" id="curso" name="curso" placeholder="Digite o curso"><br>
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" placeholder="Digite sua idade"><br>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
     </main>
-    <footer>
-        <p>By Paulo Otávio &copy; &trade;<a href="https://www.instagram.com/__paulo.otv?igsh=MTBtZWpobWJ5OWo0YQ=="><img src="./imagens/Captura de tela 2025-10-09 100325.png"></a></p>
+
+    <footer class="footer">
+        <div class="footer-conteudo">
+            <div class="footer-coluna">
+                <h4>Explore</h4>
+                <a href="./index.html">Página Inicial</a>
+                <a href="./fundBancoDados.html">Banco de Dados</a>
+                <a href="./logProgramacao.html">Programação</a>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Redes Sociais</h4>
+                <a href="https://github.com/otaviok9">GitHub</a>
+                <a href="https://www.instagram.com/__paulo.otv?igsh=MTBtZWpobWJ5OWo0YQ==">Instagram</a>
+                <a href="">Email</a>
+            </div>
+        </div>
+
+        <div class="footer-direitos">
+            © 2025 Otv'sTech — Criado para aprendizado e testes.
+        </div>
     </footer>
 </body>
+</html>

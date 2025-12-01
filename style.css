@@ -1,6 +1,7 @@
 * { 
     margin: 0; 
     padding: 0;
+    box-sizing: border-box;
 }
 
 body { 
@@ -10,12 +11,7 @@ body {
     color: #333; 
 }
 
-.conteudo-principal {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
+.conteudo-principal,
 main {
     max-width: 960px;
     margin: 0 auto;
@@ -113,27 +109,25 @@ header {
     margin-bottom: 10px;
 }
 
-.secao-modulo {
-    background-color: #fff;
-    padding: 40px;
-    margin-top: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* ===== ajustes de imagens ===== */
+.servico img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.secao-modulo h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.5em;
-    color: #007acc;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #007acc;
-    padding-bottom: 10px;
+/* Imagem grande usada no HTML/CSS */
+.img-grande {
+    width: 300px;   
+    height: auto;
+    display: block;
+    margin: 20px auto;
 }
 
-.secao-modulo p {
-    font-size: 1.1em;
-}
-
+/* ===== seção localização ===== */
 .secao-localizacao {
     max-width: 960px;
     margin: 40px auto;
@@ -168,33 +162,57 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-
-footer {
+/* ===== Rodapé ===== */
+.footer {
     background: #001f3f; 
-    color: #fff;
-    text-align: center;
-    padding: 1.5rem;
+    color: #a0a0a0; 
+    padding: 40px 20px 20px;
     margin-top: 50px;
 }
 
-footer p {
+.footer-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    justify-content: flex-start;
+    gap: 0;
+    flex-wrap: nowrap;
 }
 
-footer img {
-    height: 24px;
-    border-radius: 5px;
-    transition: transform .3s ease;
+.footer-coluna {
+    min-width: 200px;
+    margin-right: 0;
 }
 
-footer img:hover {
-    transform: scale(1.1);
+.footer-coluna h4 {
+    color: #007acc; 
+    font-size: 1.2em;
+    margin-bottom: 12px;
 }
 
-/* ===== Tamanho para celular ===== */
+.footer-coluna a {
+    display: block;
+    color: #a0a0a0; 
+    text-decoration: none;
+    margin: 6px 0;
+    font-size: 0.95em;
+    transition: color .3s ease;
+}
+
+.footer-coluna a:hover {
+    color: #ffffff;
+}
+
+.footer-direitos {
+    text-align: center;
+    color: #a0a0a0; 
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    font-size: 0.9em;
+}
+
+/* ===== Responsividade ===== */
 @media (max-width: 768px) {
     header { 
         flex-direction: column;
@@ -211,7 +229,6 @@ footer img:hover {
     }
     
     .secao-heroi h2, 
-    .secao-modulo h2, 
     .secao-localizacao h3 { 
         font-size: 2em; 
     }
@@ -228,5 +245,12 @@ footer img:hover {
         height: 300px;
         border-width: 2px;
         margin: 20px auto;
+    }
+
+    .footer-conteudo {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        flex-wrap: wrap;
     }
 }

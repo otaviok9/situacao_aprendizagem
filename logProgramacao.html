@@ -3,30 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">]
+    <script src="./codigos.js"defer></script>
     <title>Lógica de Programação</title>
 </head>
 <body>
-    <header>
-        <h1 class="logo">Otv'sTech</h1>
-        <nav class="navegacao">
-            <a href="./index.html" class="link-menu">Home</a>
-            <a href="./fundEletronica.html" class="link-menu">Fundamentos de Eletrônica</a>
-            <a href="./logProgramacao.html" class="link-menu">Lógica de Programação</a>
-            <a href="./fundBancoDados.html" class="link-menu">Fundamentos de Banco de Dados</a>
-            <a href="./fundRedes.html" class="link-menu">Fundamentos de Redes</a>
-            <a href="./logComputacional.html" class="link-menu">Lógica Computacional</a>
-            <a href="./fundTecnInf.html" class="link-menu">Fundamentos de Tecnologia da Informação</a>
-        </nav>
-    </header>
-    <main>
-        <section class="secao-modulo">
-            <h2>Lógica de Programação</h2>
-            <p>Conteúdo específico sobre lógica e os primeiros passos para desenvolver habilidades de programação.</p>
-        </section>
-    </main>
-    <footer>
-        <p>By Paulo Otávio &copy; &trade;<a href="https://www.instagram.com/__paulo.otv?igsh=MTBtZWpobWJ5OWo0YQ=="><img src="./imagens/Captura de tela 2025-10-09 100325.png"></a></p>
-    </footer>
+
+<header>
+    <h1 class="logo">Otv'sTech</h1>
+    <nav class="navegacao">
+        <a href="./index.html" class="link-menu">Home</a>
+        <a href="./fundEletronica.html" class="link-menu">Fundamentos de Eletrônica</a>
+        <a href="./logProgramacao.html" class="link-menu">Lógica de Programação</a>
+        <a href="./fundBancoDados.html" class="link-menu">Fundamentos de Banco de Dados</a>
+        <a href="./fundRedes.html" class="link-menu">Fundamentos de Redes</a>
+        <a href="./logComputacional.html" class="link-menu">Lógica Computacional</a>
+        <a href="./fundTecInf.html" class="link-menu">Fundamentos de Tecnologia da Informação</a>
+    </nav>
+</header>
+
+<main class="conteudo-principal">
+
+    <section class="secao-heroi">
+        <h2>Lógica de Programação</h2>
+        <p>Conceitos essenciais, linguagens, scripts e técnicas usadas para desenvolver programas.</p>
+    </section>
+
+    <!-- 1. Linguagens de Programação -->
+    <section class="secao-conteudo">
+        <h3>1. O que são Linguagens de Programação?</h3>
+        <p>Linguagens de programação são conjuntos de instruções usadas para criar programas que o computador pode interpretar e executar.</p>
+
+        <div class="servicos-itens">
+
+            <div class="servico">
+                <h4>C++</h4>
+                <p>Rápida, poderosa e muito usada em jogos, sistemas embarcados e softwares de alto desempenho.</p>
+                <img src="./imgs/c_linguagemProg.png" alt="C++" class="img-linguagem">
+            </div>
+
+            <div class="servico">
+                <h4>JavaScript</h4>
+                <p>Linguagem utilizada principalmente no desenvolvimento web, permitindo páginas interativas.</p>
+                <img src="./imgs/javaScript.png" alt="JavaScript" class="img-linguagem">
+            </div>
+
+            <div class="servico">
+                <h4>Java</h4>
+                <p>Usada em sistemas empresariais, servidores e desenvolvimento Android.</p>
+                <img src="./imgs/java.png" alt="Java" class="img-linguagem">
+            </div>
+
+            <div class="servico">
+                <h4>Python</h4>
+                <p>Simples de aprender e muito utilizada em IA, análise de dados e automação.</p>
+                <img src="./imgs/python.png" alt="Python" class="img-linguagem">
+            </div>
+
+            <div class="servico">
+                <h4>PHP</h4>
+                <p>Linguagem usada principalmente no backend de sites e sistemas web.</p>
+                <img src="./imgs/php.png" alt="PHP" class="img-linguagem">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 2. Interpretada x Compilada -->
+    <section class="secao-conteudo">
+        <h3>2. O que é uma linguagem interpretada e compilada?</h3>
+        <p><strong>Interpretada:</strong> o código é executado linha por linha (JavaScript, Python).</p>
+        <p><strong>Compilada:</strong> o código é transformado em arquivo executável antes de rodar (C++, Java).</p>
+    </section>
+
+    <!-- 3. HTML e CSS -->
+    <section class="secao-conteudo">
+        <h3>3. O que é HTML e CSS?</h3>
+        <p><strong>HTML:</strong> responsável pela estrutura da página. <strong>CSS:</strong> responsável pelo estilo visual da página.</p>
+        <img src="./imgs/html_css.png" alt="css_html" class="img-linguagem img-grande">
+    </section>
+
+    <!-- 4. IDE -->
+    <section class="secao-conteudo">
+        <h3>4. O que é uma IDE?</h3>
+        <p>IDE é um Ambiente de Desenvolvimento Integrado, usado para programar com mais facilidade.</p>
+        <p>Exemplos: <strong>VSCode, IntelliJ, Eclipse, PyCharm.</strong></p>
+    </section>
+
+    <!-- 5. Ordenação Crescente e Decrescente -->
+    <section class="secao-conteudo">
+        <h3>5. Script para ordenar números de 1 a 20</h3>
+        <button onclick="ordenar5()">Ordem Crescente</button>
+        <button onclick="decrescente5()">Ordem Decrescente</button>
+        <div id="res4"></div>
+        <div id="res5"></div>
+    </section>
+
+    <!-- 6. BubbleSort -->
+    <section class="secao-conteudo">
+        <h3>6. Script BubbleSort para 10 números aleatórios</h3>
+        <button onclick="principal6()">Gerar e Ordenar</button>
+        <div id="res6"></div>
+    </section>
+
+    <!-- 7. Soma de números aleatórios -->
+    <section class="secao-conteudo">
+        <h3>7. Somar 10 números aleatórios</h3>
+        <button onclick="principal7()">Gerar e Somar</button>
+        <div id="res7"></div>
+    </section>
+
+    <!-- 8. Matriz 3x3 -->
+    <section class="secao-conteudo">
+        <h3>8. Matriz 3x3 com números aleatórios</h3>
+        <button onclick="matriz8()">Gerar Matriz</button>
+        <div id="res8"></div>
+    </section>
+
+    <!-- 9. Cálculo de IMC -->
+    <section class="secao-conteudo">
+        <h3>9. Cálculo de IMC</h3>
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" placeholder="Ex: 70">
+        <label for="altura">Altura (m):</label>
+        <input type="number" id="altura" placeholder="Ex: 1.75">
+        <button onclick="principal9()">Calcular IMC</button>
+        <div id="res9"></div>
+    </section>
+
+    <!-- 10. Conversão de temperatura -->
+    <section class="secao-conteudo">
+        <h3>10. Conversão de temperatura (°C ↔ °F)</h3>
+        <label for="celsius">Temperatura em °C:</label>
+        <input type="number" id="celsius" placeholder="Ex: 25">
+        <button onclick="principal10()">Converter</button>
+        <div id="res10"></div>
+    </section>
+
+    <!-- 11. Busca Linear -->
+    <section class="secao-conteudo">
+        <h3>11. Busca Linear</h3>
+        <p>A busca linear percorre todos os elementos do vetor até encontrar o valor procurado.</p>
+        <p>É simples, porém não é a mais eficiente para listas grandes.</p>
+        <div id="res11"></div>
+    </section>
+
+    <!-- 12. Outro Script de IMC -->
+    <section class="secao-conteudo">
+        <h3>12. Outro Script de IMC</h3>
+        <label for="peso2">Peso (kg):</label>
+        <input type="number" id="peso2" placeholder="Ex: 70">
+        <label for="altura2">Altura (m):</label>
+        <input type="number" id="altura2" placeholder="Ex: 1.75">
+        <button onclick="principal12()">Calcular IMC</button>
+        <div id="res12"></div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-conteudo">
+        <div class="footer-coluna">
+            <h4>Explore</h4>
+            <a href="./index.html">Página Inicial</a>
+            <a href="./fundBancoDados.html">Banco de Dados</a>
+            <a href="./logProgramacao.html">Programação</a>
+        </div>
+
+        <div class="footer-coluna">
+            <h4>Redes Sociais</h4>
+            <a href="https://github.com/otaviok9">GitHub</a>
+            <a href="https://www.instagram.com/__paulo.otv">Instagram</a>
+            <a href="">Email</a>
+        </div>
+    </div>
+
+    <div class="footer-direitos">
+        © 2025 Otv'sTech — Criado para aprendizado e testes.
+    </div>
+</footer>
+
+<script src="./script.js"></script>
+
 </body>
 </html>
