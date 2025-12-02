@@ -4,11 +4,19 @@
     box-sizing: border-box;
 }
 
+/* ===== corpo e flex para footer ===== */
+html, body {
+    height: 100%;
+}
+
 body { 
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     background-color: #f0f0f0; 
     color: #333; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 .conteudo-principal,
@@ -16,8 +24,10 @@ main {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
+    flex: 1; /* ocupa espaço restante para empurrar footer */
 }
 
+/* ===== Cabeçalho ===== */
 header {
     background: #001f3f; 
     color: #fff;
@@ -55,7 +65,7 @@ header {
     background: #004085;
 }
 
-/* ===== página principal ===== */
+/* ===== Seção Hero ===== */
 .secao-heroi {
     background: #007acc; 
     color: #fff;
@@ -72,7 +82,7 @@ header {
     font-size: 1.1em;
 }
 
-/* ===== seção do conteúdo ===== */
+/* ===== Seção Conteúdo ===== */
 .secao-conteudo {
     max-width: 960px;
     margin: 20px auto;
@@ -109,25 +119,78 @@ header {
     margin-bottom: 10px;
 }
 
-/* ===== ajustes de imagens ===== */
-.servico img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-top: 10px;
+/* ===== Planos ===== */
+.planos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.plano {
+    flex-basis: 30%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plano h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.plano p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.valor {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btn-assinar {
+    padding: 10px 20px;
+    background: #007acc;
+    color: #fff;
+    border: none;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
-/* Imagem grande usada no HTML/CSS */
-.img-grande {
-    width: 300px;   
-    height: auto;
-    display: block;
-    margin: 20px auto;
+.btn-assinar:hover {
+    background: #005f99;
+    transform: scale(1.05);
 }
 
-/* ===== seção localização ===== */
+/* Cores diferentes para cada plano */
+.plano-basico {
+    border-top: 5px solid #2ecc71; /* verde */
+}
+
+.plano-intermediario {
+    border-top: 5px solid #f1c40f; /* amarelo */
+}
+
+.plano-premium {
+    border-top: 5px solid #e74c3c; /* vermelho */
+}
+
+/* animação ao passar o mouse */
+.plano:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* ===== seção Mapa ===== */
 .secao-localizacao {
     max-width: 960px;
     margin: 40px auto;
@@ -157,12 +220,30 @@ header {
     border: 4px solid #007acc;
     border-radius: 10px;
     width: 100%;
-    max-width: 800px;
-    height: 450px;
+    max-width: 600px;
+    height: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* ===== Rodapé ===== */
+/* ===== ajustes das imagens da seção 5 e 7 ===== */
+.secao-conteudo:nth-of-type(5) img.img-texto {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 6px;
+}
+
+.secao-conteudo:nth-of-type(6) .servico img,
+.secao-conteudo:nth-of-type(7) .servico img {
+    width: 100%;
+    max-width: 420px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 6px;
+}
+
+/* ===== ajustes do footer ===== */
 .footer {
     background: #001f3f; 
     color: #a0a0a0; 
@@ -212,7 +293,7 @@ header {
     font-size: 0.9em;
 }
 
-/* ===== Responsividade ===== */
+/* ===== responsividade ===== */
 @media (max-width: 768px) {
     header { 
         flex-direction: column;
@@ -241,8 +322,16 @@ header {
         flex-basis: 100%; 
     }
 
+    .planos-container {
+        flex-direction: column;
+    }
+
+    .plano {
+        flex-basis: 100%;
+    }
+
     .maps {
-        height: 300px;
+        height: auto;
         border-width: 2px;
         margin: 20px auto;
     }
